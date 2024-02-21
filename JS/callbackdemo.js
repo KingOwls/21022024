@@ -96,6 +96,12 @@ const valor = (id1, (error, hero)=>{
         console.log(error);
         return;
     }
-    console.log(`${hero.name}`);
+    findHeroes(id2, (error, hero2)=>{
+        if(error){
+            console.log(error);
+            return;
+        }
+        console.log(`${hero.name} -- ${hero2.name}`);
+    })
 });
 findHeroes(id1, (null, valor));
