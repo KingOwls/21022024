@@ -120,3 +120,6 @@ Promise.all([
     //! Forma 2
     //let hero1;
     //findHero(id1)
+
+
+
