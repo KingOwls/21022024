@@ -15,3 +15,14 @@ const isPar =(n) =>{
 }
 isPar(2);
 
+const heroes =[]
+
+const loadHeroes =() =>{
+    return new Promise ((resolve, reject)=>{
+        if(heroes.length>0){
+            resolve("Heroes cargados")
+            return;
+        }
+        reject("Heroes no encontrado")
+    })
+}
